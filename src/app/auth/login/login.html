@@ -1,0 +1,25 @@
+<div class="container mt-5">
+  <h2 class="text-center">Login</h2>
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+    <input 
+      type="text"
+      class="form-control mb-3"
+      placeholder="Enter Username"
+      formControlName="username">
+
+    <input 
+      type="password"
+      class="form-control mb-3"
+      placeholder="Enter Password"
+      formControlName="password">
+
+    <button class="btn btn-primary w-100">Login</button>
+ <div class="text-center mt-3">
+    <span>Don't have an account?</span>
+    <a routerLink="/register" >Sign up</a>
+  </div>
+
+  </form>
+</div>
